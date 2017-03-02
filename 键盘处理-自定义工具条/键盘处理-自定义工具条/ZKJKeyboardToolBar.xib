@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="6Ki-f9-iy0" customClass="ZKJKeyboardToolBar">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+            <items>
+                <barButtonItem title="上一项" id="6g2-Xw-U1U">
+                    <connections>
+                        <action selector="previousClick:" destination="6Ki-f9-iy0" id="5mB-8M-dsH"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem title="下一项" id="4g9-Qb-f46">
+                    <connections>
+                        <action selector="nextClick:" destination="6Ki-f9-iy0" id="M9L-xT-3Rh"/>
+                    </connections>
+                </barButtonItem>
+                <barButtonItem style="plain" systemItem="flexibleSpace" id="1Gt-YH-fcn"/>
+                <barButtonItem title="完成" id="6I6-fo-KO8">
+                    <connections>
+                        <action selector="doneClick:" destination="6Ki-f9-iy0" id="2NK-LC-VD1"/>
+                    </connections>
+                </barButtonItem>
+            </items>
+            <connections>
+                <outlet property="nextItem" destination="4g9-Qb-f46" id="3K8-p3-sTH"/>
+                <outlet property="previousItem" destination="6g2-Xw-U1U" id="1PX-EY-pCV"/>
+            </connections>
+            <point key="canvasLocation" x="-60" y="-3"/>
+        </toolbar>
+    </objects>
+</document>
